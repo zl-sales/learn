@@ -1,0 +1,31 @@
+# 构建产物与本地中间文件
+/dist/
+*.ipa
+*.apk
+
+# 各端构建输出
+clients/**/study.html
+clients/ios/Resources/
+clients/ios/ipa/
+clients/ios/build/
+clients/macos/build/
+clients/linux/out/
+clients/windows/out/
+
+# 签名材料（证书与描述文件，绝不入库）
+*.p12
+*.mobileprovision
+*.cer
+*.pem
+.zsign_cache/
+
+# React 工程本地依赖与构建产物
+web/node_modules
+web/dist/
+
+# Python 字节码
+__pycache__/
+*.py[cod]
+
+# 临时探针目录（代码块提取 / 调试用）
+.probe_tmp/
